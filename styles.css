@@ -92,6 +92,9 @@ table thead th {
 table tbody th {
     text-align: center;
 }
+table th, table td {
+    white-space: nowrap;
+}
 table td.is-alert {
     background-color: #b13131;
     color: #fff;
