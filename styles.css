@@ -66,6 +66,19 @@ button {
     cursor: pointer;
 }
 
+li:target {
+    background-color: #fcd757;
+    animation: highlight 1s ease-in-out 2s normal 1 forwards running;
+}
+@keyframes highlight {
+    0% {
+        background-color: #fcd757;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
 .table-wrapper {
     overflow-x: auto;
 }
