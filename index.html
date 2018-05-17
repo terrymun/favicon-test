@@ -24,7 +24,11 @@
 				<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
 			</symbol>
 			<symbol id="icon--close" viewBox="0 0 24 24">
-				 <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+				<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+			</symbol>
+			<symbol id="icon--warning" viewBox="0 0 24 24">
+				<path d="M0 0h24v24H0z" fill="none"/>
+				<path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
 			</symbol>
 			<symbol id="icon--distorted" viewBox="0 0 24 24">
 				<path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"/>
@@ -43,14 +47,16 @@
 				<thead>
 					<tr>
 						<td rowspan="2" colspan="2"></td>
-						<th colspan="5">Format</th>
+						<th colspan="7">Format</th>
 					</tr>
 					<tr>
+						<th scope="col">BMP</th>
 						<th scope="col">GIF</th>
 						<th scope="col">ICO</th>
 						<th scope="col">JPG</th>
 						<th scope="col">PNG</th>
 						<th scope="col">SVG</th>
+						<th scope="col">TIFF</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -62,6 +68,8 @@
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 					</tr>
 					<tr>
@@ -72,15 +80,19 @@
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 					</tr>
 					<tr>
 						<th scope="row">Safari<sup><a href="#format__footnote-1">[1]</a></sup></th>
 
+						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg><sup><a href="#format__footnote-2">[2]</a></sup></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
+						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 					</tr>
 					<tr>
 						<th scope="row">Opera</th>
@@ -90,21 +102,27 @@
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 					</tr>
 					<tr>
-						<th scope="row">Edge<sup><a href="#format__footnote-2">[2]</a></sup></th>
+						<th scope="row">Edge<sup><a href="#format__footnote-3">[3]</a></sup></th>
 
+						<td class="align-center is-warning"><svg class="icon"><use xlink:href="#icon--warning" /></svg><sup><a href="#format__footnote-4">[4]</a></sup></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
+						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 					</tr>
 					<tr>
 						<th scope="row">IE7/8</th>
 
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
+						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
@@ -113,7 +131,9 @@
 						<th scope="row">IE9/10</th>
 
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
+						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
@@ -121,10 +141,12 @@
 					<tr>
 						<th scope="row">IE11</th>
 
+						<td class="align-center is-warning"><svg class="icon"><use xlink:href="#icon--warning" /></svg><sup><a href="#format__footnote-4">[4]</a></sup></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
 						<td class="align-center is-success"><svg class="icon"><use xlink:href="#icon--check" /></svg></td>
+						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 						<td class="align-center is-alert"><svg class="icon"><use xlink:href="#icon--close" /></svg></td>
 					</tr>
 				</tbody>
@@ -138,12 +160,17 @@
 
 			<dt><svg class="icon"><use xlink:href="#icon--close" /></svg></dt>
 			<dd>Not supported</dd>
+
+			<dt><svg class="icon"><use xlink:href="#icon--warning" /></svg></dt>
+			<dd>Support with a catch (see attached footnote)</dd>
 		</dl>
 
 		<h4>Footnotes</h4>
 		<ol>
-			<li id="format__footnote-1">Tested in Safari 4 and above.</li>
-			<li id="format__footnote-2">Tested in Edge 14 and above.</li>
+			<li id="format__footnote-1">Tested in Safari 4 (Snow Leopard) and above. Note that OS X Safari 8 and above only displays favicon in URL bars when focused.</li>
+			<li id="format__footnote-2">BMP rendering is only introduced in Safari 7.1 (Mavericks) and above.</li>
+			<li id="format__footnote-3">Tested in Edge 14 and above.</li>
+			<li id="format__footnote-4">Rendering of transparency in BMP images is problematic.</li>
 		</ol>
 
 		<h3>Sizes</h3>
